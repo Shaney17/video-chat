@@ -1,8 +1,6 @@
-const playVideo = require("./playVideo");
-
-function openStream(){
+function openStream(callback){
     navigator.mediaDevices.getUserMedia({audio : false, video : true})
-    .then(stream => playVideo(stream, 'localStream'))
+    .then(stream => callback(stream))
     .catch(err => console.log(stream));
 }
 
