@@ -9,7 +9,17 @@
 <body>
   <h1>Video chat</h1>
   <video id="localStream" width="300" controls></video>
+  <br><br>
+  <label>My Connection Token</label>
+  <textarea cols="100" rows="3" id="txtMySignal"></textarea>
+  <br><br>
+  <input type="text" placeholder="your friend's signal" id="txtFriendSignal">
+  <br><br>
+  <button id="btnConnect">Connect</button>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="bundle.js"></script>
+
 </html>
